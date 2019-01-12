@@ -10,6 +10,8 @@ After cloning, type "npm install" to install all dependencies
 ## Running Instructions
 After installation finished that type "npm run start"
 
-![](index.gif)
+### To sign in and add/view movies and reviews, run the server-side application in the other repository
 
-![](elementsHome.gif)
+![](https://i.imgur.com/SbMh7Gf.mp4)
+
+![](https://i.imgur.com/QCQ1yAL.gif)
