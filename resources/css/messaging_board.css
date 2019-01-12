@@ -1,0 +1,229 @@
+/* --------------------------- */
+/* BASIC SETUP */
+/* --------------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: #373737;
+    font-size: 25px;
+    font-family: 'Lato', sans-serif; 
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-image: radial-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.7)), url("https://i.imgur.com/q2UDBbp.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+/* --------------------------- */
+/* HEADINGS */
+/* --------------------------- */
+
+h1 {
+    color: #b64539;
+    font-size: 85%;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+h1:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background-color: #b64539;
+    width: 85%;
+    margin: 15px 0 45px;
+}
+
+h2 {
+    line-height: 15px;
+    font-size: 55%;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.64);
+/*    margin-bottom: 5px;*/
+    margin: 0 0 7px 0;
+}
+
+/* --------------------------- */
+/* WRAP */
+/* --------------------------- */
+
+.wrapper {
+    position: absolute;
+    width: 700px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+}
+
+.border-wrap {
+    border: 1px solid;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --------------------------- */
+/* BUTTONS */
+/* --------------------------- */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #b64539;
+    border-color: rgba(255, 255, 255, 0.3);
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
+    text-transform: uppercase;
+    color: rgb(238, 238, 238);
+    cursor: pointer;
+    font-size: 60%;
+    margin: 10px 14px 0 0;
+    padding: 5px 22px;
+    border-radius: 4px;
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.3);
+    outline: none !important;
+    transition: background-color 400ms ease;
+}
+
+.btn:hover,
+.btn:active {
+    background-color: rgba(182, 39, 23, 0.8);
+}
+
+.reset-btn {
+    background-color: rgba(182, 69, 57, 0.4);
+}
+
+.return-btn {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* --------------------------- */
+/* FIELDS */
+/* --------------------------- */
+
+.post-message-textarea,
+.message-item {
+    background: #fff;
+    border: 1px solid #cccccc;
+    color: #000000;
+    font-size: 55%;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    outline: none !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) inset, 0 1px 0 rgba(255, 255, 255, 0.2);
+}
+
+.post-message-textarea {
+    padding: 5px;
+    width: 90%;
+    height: 100px;
+    opacity: 0.7;
+    transition: width 150ms ease-in-out, opacity 250ms linear;
+}
+
+.post-message-textarea:focus {
+    opacity: 0.9;
+    box-shadow:-1px -1px 0px rgb(177, 4, 4, 0.2);
+    width: 95%;
+    border-color:#ccc;
+    outline: none !important;
+    transition: width 300ms ease-in-out, opacity 250ms linear;
+}
+
+.message-list {
+    display: block;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.message-item {
+    padding: 10px;
+    height: 47px;
+    width: 90%;
+    opacity: 0.7;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: break-all;
+    transition: all 300ms ease;
+}
+
+.message-item:hover {
+    overflow-y: scroll;
+/*    transition: all 300ms ease;*/
+}
+
+/* --------------------------- */
+/* FIELDS INNER SCROLL BAR */
+/* --------------------------- */
+
+.message-item::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+.message-item::-webkit-scrollbar-thumb {
+    background: #b64539;
+    border-radius: 20px;
+}
+
+/* --------------------------- */
+/* PAGINATION */
+/* --------------------------- */
+
+.page-numbers {
+    font-size: 65%;
+    margin: 35px 0;
+}
+
+.page-numbers a:link,
+.page-numbers a:visited {
+    font-weight: 300;
+    text-decoration: none;
+    color: rgba(182, 69, 57, 0.8);
+    margin-right: 15px;
+    transition: all 100ms linear;
+}
+
+.page-numbers a:hover,
+.page-numbers a:active {
+    font-weight: 700;
+    color: rgba(182, 69, 57, 1);
+    padding: 3px 0;
+    border-top: 1px solid rgba(182, 69, 57, 0.7);
+    border-bottom: 1px solid rgba(182, 69, 57, 0.7);
+}
+
+/* --------------------------- */
+/* LOADING LABEL */
+/* --------------------------- */
+
+.loading {
+    display: inline-block;
+    margin: 0 auto;
+    padding: 40px;
+}
+
+.loading span {
+    font-size: 120%;
+    font-weight: 300;
+    letter-spacing: 5px;
+    word-spacing: 3px;
+    color: rgba(255, 255, 255, 0.3);
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="resources/css/create_element.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400,700" rel="stylesheet">
+    <title>Element Creation Form</title>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+
+            <form action="" method="post" id="new_element_form">
+
+                <fieldset>
+
+                    <h1 id="headline">Creation Form</h1>
+
+                    <input class="type-default" id="type" type="text" name="Type of Element" placeholder="" />
+
+                    <input id="name" type="text" name="Name of Element" placeholder="Name of the element" />
+
+                    <input id="x" type="text" name="loc_x" placeholder="Location x" />
+
+                    <input id="y" type="text" name="loc_y" placeholder="Location y" />
+
+                    <h2>Write here more attributes in JSON format</h2>
+                    <textarea id="more" name="message" placeholder="More Attributes to the Page">{}</textarea>
+
+                    <input type="button" id="submit_btn" class="btn submit-btn" value="" />
+                    <input type="button" id="reset_btn" class="btn reset-btn" value="Reset Form" />
+                    <input type="button" id="cancel_btn" class="btn cancel-btn" value="Cancel" />
+
+                </fieldset>
+
+            </form>
+
+        </div>
+
+    </header>
+
+    <script src="create_element.bundle.js"></script>
+
+</body>
+
+</html>

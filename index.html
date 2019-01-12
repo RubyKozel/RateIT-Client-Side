@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+    <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="resources/css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
+    <title>RateIT</title>
+</head>
+
+<body>
+    
+    <header>
+
+        <nav>
+            <div class="row">
+
+                <a href="/"><img src="https://i.imgur.com/sHtiVYy.png" alt="logo" class="logo" id="logo"></a>
+
+                <ul class="main-nav">
+
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#team">The Team</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li class="btn-register"><a href='#sign' id='signup_nav'>Sign Up</a></li>
+                    <li class="btn-login"><a href='#sign' id='signin_nav'>Sign In</a></li>
+
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="hero-text-box">
+            <h1>RateIT</h1>
+            <h2>Post a Review. Help Others.</h2>
+        </div>
+
+        <div class="hero-btns-box">
+            <a class="btn btn-full" href="#sign" id='signup_btn'>Sign up</a>
+            <a class="btn btn-ghost" href="#sign" id='signin_btn'>Already a member ?</a>
+        </div>
+        
+    </header>
+    
+    <input type="button" id="go_to_top" class="btn top-btn" value="^">
+
+    <section class="section-features" id="features">
+
+        <div class="row">
+            <h3 id="features_rateit">RateIT</h3>
+            <p class="long-para">
+                RateIT is an all-in-one application which enables users to write reviews for movies and rate them. 
+                They can also view the reviews written by others and like or dislike them.
+                Our goal is to make the process of choosing a movie to watch much easier.
+                We thought about the application first when we wanted to go to the movies but couldn’t find good critic to decide which movie to watch.
+                
+                The purpose of the application is to let people criticise movies they have watched, so others will use this critics to decide if a movie is worth watching.
+                From now on, this application will make your life much more easier.
+
+
+            </p>
+        </div>
+
+        <div class="row">
+
+            <div class="col span-1-of-2 box">
+                <i class="ion-compose big-icon"></i>
+                <h4>Post & Read Reviews</h4>
+                <p>
+                    Check out the various reviews in our side to get a better understanding about the quality of the movie you're going to watch.
+                    Watched a movie and liked it? Was it disappointing? let everyone know!
+                </p>
+            </div>
+
+            <div class="col span-1-of-2 box">
+                <i class="ion-thumbsup big-icon"></i>
+                <h4>Rate Movies</h4>
+                <p>
+                    Liked a movie you watched?
+                    give the movie a thumbs up !
+                    Help others by telling others how the movie was!
+                    
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="section-latest-reviews" id="latest">
+
+        <div class="latest-reviews-text">
+            <h3>latest Reviews</h3>
+        </div>
+
+        <ul class="latest-showcase clearfix">
+
+            <li>
+                <figure class="poster">
+                    <a href="/"><img src="https://i.imgur.com/pNd6eKq.jpg" alt="Deadpool"></a>
+                </figure>
+            </li>
+
+            <li>
+                <figure class="poster">
+                    <a href="/"><img src="https://i.imgur.com/cj0pdgz.jpg" alt="GoT"></a>
+                </figure>
+            </li>
+
+            <li>
+                <figure class="poster">
+                    <a href="/"><img src="https://i.imgur.com/rs4vpfc.jpg" alt="Wonder Woman"></a>
+                </figure>
+            </li>
+
+            <li>
+                <figure class="poster">
+                    <a href="/"><img src="https://i.imgur.com/l5Utm0M.jpg" alt="FastFurious8"></a>
+                </figure>
+            </li>
+        </ul>
+    </section>
+
+
+    <section class="section-sign" id="sign">
+
+        <div class="form is-visible" id="div_signup">
+
+            <h3 id="signup">Sign Up</h3>
+
+            <form class="form-container">
+
+                <input type="text" placeholder="Username" class="form-input" name="username" id="username_up">
+                <input type="email" placeholder="Email" class="form-input" name="email" id="email_up">
+                <input type="text" placeholder="Avatar" class="form-input" name="avatar" id="avatar_up">
+                <input type="button" class="btn-sign" id="register_to_confirm" value="Register">
+
+            </form>
+
+            <input type="button" class="btn btn-switch" id="signup_to_signin" value="Already a member ?">
+
+        </div>
+
+        <div class="form" id="div_signin">
+
+            <h3 id="signin">Sign In</h3>
+
+            <form class="form-container">
+                <input type="email" placeholder="Email" class="form-input" name="email" id="email_in">
+                <input type="button" class="btn-sign" id="signin_to_dashboard" value="Sign in">
+
+            </form>
+
+            <input type="button" class="btn btn-switch" id="signin_to_signup" value="Not a member yet ?">
+<!--            <input type="button" class="btn btn-switch" id="signin_to_confirm" value="Have a user and still didn't confirm ?">-->
+
+        </div>
+
+        <div class="form" id="div_confirm">
+
+            <h3 id="confirm">Confirm Registration</h3>
+
+            <form class="form-container">
+
+                <input type="email" placeholder="Email" class="form-input" name="email" id="email_confirm">
+                <input type="text" placeholder="Code" class="form-input" name="code" id="code_confirm">
+                <input type="button" class="btn-sign" id="confirm_to_dashboard" value="Confirm">
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <section class="section-team" id="team">
+
+        <div class="row">
+            <h3 id="the_team">The Team</h3>
+        </div>
+
+        <div class="row">
+
+            <div class="col span-1-of-4 box">
+
+                <figure class="team-member">
+                    <img src="https://i.imgur.com/tsXUsfs.jpg" alt="Slava Kagan">
+                </figure>
+
+                <h4>Slava Kagan</h4>
+                <p>Team Leader<br>Scrum Master<br></p>
+                <a href="https://www.linkedin.com/in/slava-kagan-4b776596" target="_blank" class="ion-social-linkedin linkedin"></a>
+
+            </div>
+
+            <div class="col span-1-of-4 box">
+
+                <figure class="team-member">
+                    <img src="https://i.imgur.com/jlOMHad.jpg" alt="Ruby Kozel">
+                </figure>
+
+                <h4>Ruby Kozel</h4>
+                <p>QA Engineer<br>UX & UI<br></p>
+                <a href="https://www.linkedin.com/in/rubykozel" target="_blank" class="ion-social-linkedin linkedin"></a>
+
+            </div>
+
+            <div class="col span-1-of-4 box">
+
+                <figure class="team-member">
+                    <img src="https://i.imgur.com/viFSIRJ.jpg" alt="Yossi Saadi">
+                </figure>
+
+                <h4>Yossi Saadi</h4>
+                <p>DevOps<br>UX & UI</p>
+                <a href="https://www.linkedin.com/in/yossisaadi" target="_blank" class="ion-social-linkedin linkedin"></a>
+
+            </div>
+
+            <div class="col span-1-of-4 box">
+
+                <figure class="team-member">
+                    <img src="https://i.imgur.com/sPYTHm8.jpg" alt="Yarden Shai">
+                </figure>
+
+                <h4>Yarden Shai</h4>
+                <p>DBA<br><br></p>
+                <a href="https://www.linkedin.com/in/yarden-shai-4019b9160" target="_blank" class="ion-social-linkedin linkedin"></a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+    
+    <script type="text/javascript" src="index.bundle.js"></script>
+    
+</body>
+
+</html>

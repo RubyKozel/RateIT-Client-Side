@@ -1,0 +1,40 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/twbs/bootstrap/48938155eb24b4ccdde09426066869504c6dab3c/dist/css/bootstrap.min.css">
+    <!--    <link rel="stylesheet" href="resources/css/elements_home.css">-->
+    <link rel="stylesheet" href="resources/css/messaging_board.css">
+    <title> Messaging Board </title>
+</head>
+
+<body>
+
+    <header>
+        <div class="wrapper">
+            <div class="border-wrap">
+
+                <h1>Messaging Board</h1>
+
+                <div class="container"></div>
+
+                <h2>Write your message here</h2>
+                
+                <form id="new_message_form">
+                    <textarea id='message' name="message" placeholder="Type Here ..." class="post-message-textarea"></textarea>
+                </form>
+                
+                <div class="buttons">
+                    <input type="button" id="post_btn" class="btn post-btn" value="Post" />
+                    <input type="button" id="reset_btn" class="btn reset-btn" value="Reset Message" />
+                    <input type="button" id="return_btn" class="btn return-btn" value="Return" />
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <script src='messaging_board.bundle.js'></script>
+
+</body>
+
+</html>
