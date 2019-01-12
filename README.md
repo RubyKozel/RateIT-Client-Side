@@ -7,6 +7,7 @@ For the client we used HTML, CSS, JS, React.
 
 ## Installation Instructions
 After cloning, type "npm install" to install all dependencies
+## Running Instructions
 After installation finished that type "npm run start"
 
 ![](index.gif)
