@@ -5,6 +5,10 @@ As part of the course, we had to think of an idea for a project, and implement e
 This is the client side of the project.
 For the client we used HTML, CSS, JS, React.
 
+## GoTo:
+https://yossisaadi.github.io/RateIT/
+or
+
 ## Installation Instructions
 After cloning, type "npm install" to install all dependencies
 ## Running Instructions
@@ -12,6 +16,6 @@ After installation finished that type "npm run start"
 
 ### To sign in and add movies&reviews, run the server-side application in the other repository
 
-![](https://i.imgur.com/WWtVqGd.gif)
+![Index](https://i.imgur.com/WWtVqGd.gif)
 
-![](https://i.imgur.com/QCQ1yAL.gif)
+![Dashboard](https://i.imgur.com/QCQ1yAL.gif)
