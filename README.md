@@ -6,7 +6,7 @@ This is the client side of the project.
 For the client we used HTML, CSS, JS, React.
 
 ## GoTo:
-https://yossisaadi.github.io/RateIT/
+https://yossisaadi.github.io/RateIT-ClientSide/
 or
 
 ## Installation Instructions
