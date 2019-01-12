@@ -12,6 +12,6 @@ After installation finished that type "npm run start"
 
 ### To sign in and add movies&reviews, run the server-side application in the other repository
 
-![](https://i.imgur.com/SbMh7Gf.gif)
+![](https://i.imgur.com/WWtVqGd.gif)
 
 ![](https://i.imgur.com/QCQ1yAL.gif)
