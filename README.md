@@ -5,10 +5,6 @@ As part of the course, we had to think of an idea for a project, and implement e
 This is the client side of the project.
 For the client we used HTML, CSS, JS, React.
 
-## GoTo:
-https://yossisaadi.github.io/RateIT-ClientSide/
-or
-
 ## Installation Instructions
 After cloning, type "npm install" to install all dependencies
 ## Running Instructions
